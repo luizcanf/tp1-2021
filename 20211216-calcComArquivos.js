@@ -1,5 +1,4 @@
 const leia = require("readline-sync");
-const funcoes = require("./20211209-modulo.js");
 const fs = require("fs");
 
 function registraOperacao(op, v1, v2) {
