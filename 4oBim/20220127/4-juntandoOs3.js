@@ -6,6 +6,10 @@ var compras = [
     { id: 5, descricao: "Fogão", categoria: "Eletrodoméstico", preco: 500, quantidade: 1 },
 ]
 
+// Sugestão original do Copilot (com o reduce eliminando a necessidade do map):
+//let subtotalEletronicos = compras.filter(element => element.categoria == "Eletrônico").reduce((acc, element) => acc + (element.preco * element.quantidade), 0);
+
+// Quebrando o código em partes:
 let eletronicosNaCompra = compras.filter(produto => produto.categoria == "Eletrônico");
 console.table(eletronicosNaCompra);
 let gastosComEletronicos = eletronicosNaCompra.map(produto => produto.preco * produto.quantidade)
