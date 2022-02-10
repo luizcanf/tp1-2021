@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Aprendendo JS rodando no HTML</title>
+    <meta charset="utf-8">
+    <script>
+        function soma(x, y) {
+          total = parseFloat(x)+parseFloat(y);
+          document.getElementById('resultado').innerHTML = total;
+        }
+    </script>
+</head>
+
+<body onload="javascript:console.log('Página carregada.')">
+    <h1>Criando um formulário no HTML</h1>
+    <form action="javascript:soma(n1.value, n2.value)">
+        <input type="number" name="n1" id="n1">
+        <input type="number" name="n2" id="n2">
+        <input type="submit" value="Somar">
+    </form>
+    <p id="resultado"></p>
+</body>
+
+</html>
